@@ -2,11 +2,11 @@
 
 <div id="top_02" class="clearfix">
     <div id="top_02_menus" class="clearfix">
-        <a href="index.htm">Начало</a>
-        <a href="novini.html">Новини</a>
-        <a href="za_gimnaziata.html">За гимназията</a>
-        <a href="priem.html">Прием</a>
-        <a href="ucheben_proces.html">Учебен процес</a>
-        <a href="proekti.html">Проекти</a>
+        <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" Text="Начало" />
+        <asp:HyperLink runat="server" NavigateUrl="~/Pages/Novini.aspx" Text="Новини" />
+        <asp:HyperLink runat="server" NavigateUrl="~/Pages/ZaGimnaziata.aspx" Text="За гимназията" />
+        <asp:HyperLink runat="server" NavigateUrl="~/Pages/Priem.aspx" Text="Прием" />
+        <asp:HyperLink runat="server" NavigateUrl="~/Pages/UchebenProces.aspx" Text="Учебен процес" />
+        <asp:HyperLink runat="server" NavigateUrl="~/Pages/Proekti.aspx" Text="Проекти" />
     </div>
 </div>

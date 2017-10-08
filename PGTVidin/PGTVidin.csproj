@@ -150,20 +150,36 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="index_files\11.jpg.jpg" />
+    <Content Include="index_files\2106003206.png" />
     <Content Include="index_files\base.css" />
+    <Content Include="index_files\centur_choveshki_resursi_small.jpg" />
     <Content Include="index_files\colorbox.css" />
     <Content Include="index_files\external-links.js" />
+    <Content Include="index_files\fbbutton - Copy.jpg" />
+    <Content Include="index_files\fbbutton.jpg" />
     <Content Include="index_files\images2539B824.jpg" />
     <Content Include="index_files\IMGP3533.jpg" />
+    <Content Include="index_files\IZ.jpg" />
     <Content Include="index_files\jquery-1.js" />
     <Content Include="index_files\jquery.js" />
+    <Content Include="index_files\newCLR.gif" />
     <Content Include="index_files\priem.jpg" />
+    <Content Include="index_files\skluchen_dogovor.jpg" />
     <Content Include="index_files\Slide1.JPG" />
+    <Content Include="index_files\summer.jpg" />
     <Content Include="index_files\swfobject.js" />
     <Content Include="index_files\swfobject_modified.js" />
     <Content Include="index_files\timthumb.png" />
+    <Content Include="index_files\untitled.png" />
     <Content Include="index_files\urchin.js" />
     <Content Include="index_files\vashata_gimnazia.jpg" />
+    <Content Include="index_files\yspeh.jpg" />
+    <Content Include="Pages\Novini.aspx" />
+    <Content Include="Pages\Priem.aspx" />
+    <Content Include="Pages\Proekti.aspx" />
+    <Content Include="Pages\UchebenProces.aspx" />
+    <Content Include="Pages\ZaGimnaziata.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -251,6 +267,41 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Novini.aspx.cs">
+      <DependentUpon>Novini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Novini.aspx.designer.cs">
+      <DependentUpon>Novini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Priem.aspx.cs">
+      <DependentUpon>Priem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Priem.aspx.designer.cs">
+      <DependentUpon>Priem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Proekti.aspx.cs">
+      <DependentUpon>Proekti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Proekti.aspx.designer.cs">
+      <DependentUpon>Proekti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UchebenProces.aspx.cs">
+      <DependentUpon>UchebenProces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UchebenProces.aspx.designer.cs">
+      <DependentUpon>UchebenProces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZaGimnaziata.aspx.cs">
+      <DependentUpon>ZaGimnaziata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZaGimnaziata.aspx.designer.cs">
+      <DependentUpon>ZaGimnaziata.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
