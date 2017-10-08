@@ -9,9 +9,6 @@
                 <h3>Начало</h3>
             </div>
             <div id="home_left">
-                <p><strong><a href="#">Профил на купувача</a></strong></p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
                 <p>
                     <a href="priem.html">
                         <img src="index_files/priem.jpg" width="195" height="60" /></a>
@@ -22,9 +19,6 @@
                     <a href="CLOUD.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','index_files/timthumb.png',1)">
                         <img src="index_files/images2539B824.jpg" name="Image7" width="88" height="63" border="0" id="Image7" /></a>
                 </p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
             </div>

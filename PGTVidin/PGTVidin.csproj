@@ -155,6 +155,7 @@
     <Content Include="index_files\base.css" />
     <Content Include="index_files\centur_choveshki_resursi_small.jpg" />
     <Content Include="index_files\colorbox.css" />
+    <Content Include="index_files\DSC04583.jpg" />
     <Content Include="index_files\external-links.js" />
     <Content Include="index_files\fbbutton - Copy.jpg" />
     <Content Include="index_files\fbbutton.jpg" />
@@ -175,6 +176,9 @@
     <Content Include="index_files\urchin.js" />
     <Content Include="index_files\vashata_gimnazia.jpg" />
     <Content Include="index_files\yspeh.jpg" />
+    <Content Include="Pages\Ekip.aspx" />
+    <Content Include="Pages\Galeria.aspx" />
+    <Content Include="Pages\Kontakti.aspx" />
     <Content Include="Pages\Novini.aspx" />
     <Content Include="Pages\Priem.aspx" />
     <Content Include="Pages\Proekti.aspx" />
@@ -267,6 +271,27 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ekip.aspx.cs">
+      <DependentUpon>Ekip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ekip.aspx.designer.cs">
+      <DependentUpon>Ekip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Galeria.aspx.cs">
+      <DependentUpon>Galeria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Galeria.aspx.designer.cs">
+      <DependentUpon>Galeria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Kontakti.aspx.cs">
+      <DependentUpon>Kontakti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Kontakti.aspx.designer.cs">
+      <DependentUpon>Kontakti.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Novini.aspx.cs">
       <DependentUpon>Novini.aspx</DependentUpon>
