@@ -1,4 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PGTVidin.SiteMaster" %>
+<%@ Register TagPrefix="my" TagName="Menu" Src="~/Controls/Menu.ascx" %>
+<%@ Register TagPrefix="my" TagName="Header" Src="~/Controls/Header.ascx"  %>
+<%@ Register TagPrefix="my" TagName="UpperMenu" Src="~/Controls/UpperMenu.ascx" %>
+<%@ Register TagPrefix="my" TagName="Footer" Src="~/Controls/Footer.ascx" %>
 
 <!DOCTYPE html>
 
@@ -104,63 +108,11 @@
 <body>
     <form runat="server">
         <div id="wrapper">
-            <div id="top_01" class="clearfix">
-                <div id="top_01_menus" class="clearfix">
-                    <div id="top_01_begin"></div>
-                    <a href="https://www.facebook.com/pgtmihalakigeorgiev">Facebook</a><a href="galery.html">Галерия</a><a href="ekip.html">Екип</a><a href="contakti.html" class="last">Контакти</a>
-                </div>
-            </div>
-            <div id="header">
-                <div id="lang">
-                    <p><span class="active">Български</span>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="english.html">English</a>		</p>
-
-                </div>
-                <table width="997" border="0" align="center">
-                    <tr>
-                        <td width="538">
-                            <p><strong>ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО ТУРИЗЪМ &quot;МИХАЛАКИ ГЕОРГИЕВ&quot;- ВИДИН</strong></p>
-                            <p>&nbsp;</p>
-                        </td>
-                    </tr>
-                </table>
-                <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="997" height="110">
-                    <param name="movie" value="1.swf" />
-                    <param name="quality" value="high" />
-                    <param name="wmode" value="opaque" />
-                    <param name="swfversion" value="8.0.35.0" />
-                    <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
-                    <param name="expressinstall" value="Scripts/expressInstall.swf" />
-                    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
-                    <!--[if !IE]>-->
-                    <object type="application/x-shockwave-flash" data="1.swf" width="997" height="110">
-                        <!--<![endif]-->
-                        <param name="quality" value="high" />
-                        <param name="wmode" value="opaque" />
-                        <param name="swfversion" value="8.0.35.0" />
-                        <param name="expressinstall" value="Scripts/expressInstall.swf" />
-                        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
-                        <div>
-                            <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
-                            <p>
-                                <a href="http://www.adobe.com/go/getflashplayer">
-                                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a>
-                            </p>
-                        </div>
-                        <!--[if !IE]>-->
-                    </object>
-                    <!--<![endif]-->
-                </object>
-                <div id="header_pic"></div>
-            </div>
-            <div id="top_02" class="clearfix">
-                <div id="top_02_menus" class="clearfix"><a href="index.htm">Начало</a><a href="novini.html">Новини</a><a href="za_gimnaziata.html">За гимназията</a><a href="priem.html">Прием</a><a href="ucheben_proces.html">Учебен процес</a><a href="proekti.html">Проекти</a></div>
-            </div>
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-
-            <div id="footer">
-                2014 ПГТ &quot;МИХАЛАКИ ГЕОРГИЕВ&quot;-ВИДИН. All rights reserved.<div id="createdby"></div>
-            </div>
+            <my:UpperMenu runat="server" /> 
+            <my:Header runat="server" />
+            <my:Menu runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <my:Footer runat="server" />
         </div>
         <script src="index_files/urchin.js" type="text/javascript"></script>
     </form>
