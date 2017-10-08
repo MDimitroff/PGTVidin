@@ -6,67 +6,163 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>ПГ по туризъм &quot;Михалаки Георгиев&quot;</title>
+    <link rel="SHORTCUT ICON" href="http://www.pgtvidin.com/favicon.ico">
+    <meta name="keywords" content="училище,  гимназия, професионална гимназия, професионални гимназии, ПГТ,образование, администратор в хотелиерствоо, ресторантьор, кетъринг">
+    <meta name="description" content="57 години за Професионална гимназия по туризъм Михалаки Георгиев, град Видин са години на градеж, развитие, търсене на правилния път. Гимназията разработва и печели международни проекти, разширява мирогледа на младите хора, кара ги да се съизмерват с приятелите си от Европа и това я прави модерна, стабилна и разбира се, търсена.">
+    <link href="index_files/base.css" rel="stylesheet" type="text/css">
+    <link href="index_files/colorbox.css" rel="stylesheet" type="text/css">
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
+    <script type="text/javascript" src="index_files/external-links.js"></script>
+    <script type="text/javascript" src="index_files/swfobject.js"></script>
+    <script type="text/javascript" src="index_files/jquery-1.js"></script>
+    <script type="text/javascript" src="index_files/jquery.js"></script>
+    <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+    <script type="text/JavaScript">
+        $(document).ready(function () {
+            $('a.thumb_link').colorbox({ rel: 'thumb_link', transition: true, slideshow: true, slideshowAuto: false, maxWidth: '90%', maxHeight: '90%' });
+        });
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
 
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
+
+    <style type="text/css">
+        #wrapper #content #left #home_left p a img {
+            text-align: center;
+        }
+
+        #wrapper #content #left #home_left p a {
+            text-align: left;
+        }
+
+        #wrapper #content #left #home_left {
+            text-align: left;
+        }
+
+        #wrapper #footer {
+            font-weight: bold;
+        }
+
+        #wrapper #content #left #copyright tr td {
+        }
+
+            #wrapper #content #left #copyright tr td a {
+                color: #003;
+                font-weight: bold;
+                text-align: left;
+                font-size: 85%;
+            }
+
+        #wrapper #content #left p {
+            text-align: left;
+            color: #003;
+            font-weight: bold;
+        }
+
+        #wrapper #content #center h1 {
+            font-size: 12px;
+        }
+
+        #wrapper #header table tr td {
+            text-align: center;
+            font-weight: bold;
+        }
+
+            #wrapper #header table tr td strong {
+                color: #FFF;
+                font-size: 150%;
+                font-family: Georgia, "Times New Roman", Times, serif;
+            }
+
+        body {
+            background-color: #28214e;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="respond" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+        <div id="wrapper">
+            <div id="top_01" class="clearfix">
+                <div id="top_01_menus" class="clearfix">
+                    <div id="top_01_begin"></div>
+                    <a href="https://www.facebook.com/pgtmihalakigeorgiev">Facebook</a><a href="galery.html">Галерия</a><a href="ekip.html">Екип</a><a href="contakti.html" class="last">Контакти</a>
                 </div>
             </div>
-        </div>
-        <div class="container body-content">
+            <div id="header">
+                <div id="lang">
+                    <p><span class="active">Български</span>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="english.html">English</a>		</p>
+
+                </div>
+                <table width="997" border="0" align="center">
+                    <tr>
+                        <td width="538">
+                            <p><strong>ПРОФЕСИОНАЛНА ГИМНАЗИЯ ПО ТУРИЗЪМ &quot;МИХАЛАКИ ГЕОРГИЕВ&quot;- ВИДИН</strong></p>
+                            <p>&nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+                <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="997" height="110">
+                    <param name="movie" value="1.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="opaque" />
+                    <param name="swfversion" value="8.0.35.0" />
+                    <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="1.swf" width="997" height="110">
+                        <!--<![endif]-->
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="opaque" />
+                        <param name="swfversion" value="8.0.35.0" />
+                        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                        <div>
+                            <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                            <p>
+                                <a href="http://www.adobe.com/go/getflashplayer">
+                                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a>
+                            </p>
+                        </div>
+                        <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                </object>
+                <div id="header_pic"></div>
+            </div>
+            <div id="top_02" class="clearfix">
+                <div id="top_02_menus" class="clearfix"><a href="index.htm">Начало</a><a href="novini.html">Новини</a><a href="za_gimnaziata.html">За гимназията</a><a href="priem.html">Прием</a><a href="ucheben_proces.html">Учебен процес</a><a href="proekti.html">Проекти</a></div>
+            </div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
 
+            <div id="footer">
+                2014 ПГТ &quot;МИХАЛАКИ ГЕОРГИЕВ&quot;-ВИДИН. All rights reserved.<div id="createdby"></div>
+            </div>
+        </div>
+        <script src="index_files/urchin.js" type="text/javascript"></script>
     </form>
 </body>
 </html>
